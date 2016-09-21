@@ -16,3 +16,4 @@
 //= require_tree .
 //= require turbolinks
 //= require mainjavascript
+//= require maps
