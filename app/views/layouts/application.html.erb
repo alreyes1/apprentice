@@ -11,6 +11,38 @@
 </head>
 <body>
 
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                  </button>
+                  <a class="navbar-brand page-scroll" href="/">Standard Apprentice:</a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li>
+                          <a class="page-scroll" href="/Instructions">Instructions</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="/answers">FAQs</a>
+                      </li>
+                      <% if user_signed_in? %>
+                         <li><%= link_to 'Sign Out', destroy_user_session_path, :method => :delete %></li>
+
+                     <% else %>
+                          <li><%= link_to 'Sign In', new_user_session_path %></li>
+                    <% end %>
+                </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+      </nav>
+
   <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
   <g>
     <path fill="#ffffff" d="M703,963.7H297c-29.3,0-56.2-16-70.1-41.8L19.8,537.8c-12.8-23.7-12.8-51.9,0-75.6L227,78.1   c13.9-25.8,40.8-41.8,70.1-41.8H703c29.3,0,56.2,16,70.1,41.8l207.2,384.1c12.8,23.7,12.8,51.9,0,75.6L773,921.9   C759.1,947.7,732.3,963.7,703,963.7z M297,49.3c-24.5,0-47,13.4-58.6,35L31.3,468.4c-10.7,19.8-10.7,43.4,0,63.2l207.2,384.1   c11.6,21.6,34.1,35,58.6,35H703c24.5,0,47-13.4,58.6-35l207.2-384.1c10.7-19.8,10.7-43.4,0-63.2L761.6,84.3   c-11.6-21.6-34.1-35-58.6-35H297z"/>

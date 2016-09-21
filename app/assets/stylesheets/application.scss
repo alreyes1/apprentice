@@ -37,3 +37,279 @@ body {
 		margin-top: 0;
 	}
 }
+.full-content {
+    width: 100%;
+  /*   position: fixed; */
+    top: 0;
+    opacity: 0;
+    -moz-transform: translateY(2000px);
+    -webkit-transform: translateY(2000px);
+    -o-transform: translateY(2000px);
+    -ms-transform: translateY(2000px);
+    transform: translateY(2000px);
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+}
+.detail .full-content {
+    opacity: 1;
+    -webkit-transition-delay: 200ms;
+    transition-delay: 200ms;
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: 1000ms;
+    transition-delay: 1000ms;
+}
+.back-x {
+    color: #333;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 32px;
+    z-index: 99;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "standard-code" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.full-content .full-details {
+    width: 780px;
+    margin: 0 auto;
+    padding: 30px 30px 80px;
+}
+.full-content .full-details h2 {
+    font-size: 36px;
+    font-family: "bebas-neue",sans-serif;
+}
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+}
+.bottom-hero {
+    width: 100%;
+    height: 700px;
+		background-image: url('/assets/REYES_PORTRAIT.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.full-content .full-details .tag {
+    float: right;
+    background: red;
+    color: #fff;
+    padding: 2px 4px;
+}
+.full-content .full-details .post-details {
+    margin-top: 30px;
+}
+a {
+    color: red;
+}
+
+@media (max-width: 900px){
+.full-content .full-details {
+    width: 100%;
+    overflow: hidden;
+}}
+
+/* standard-code */
+@font-face {
+  font-family: "standard-code";
+  src:url("https://file.myfontastic.com/9fPVzMyv63xGRm4pu633cE/fonts/1447143576.eot");
+  src:url("https://file.myfontastic.com/9fPVzMyv63xGRm4pu633cE/fonts/1447143576.eot?#iefix") format("embedded-opentype"),
+    url("https://file.myfontastic.com/9fPVzMyv63xGRm4pu633cE/fonts/1447143576.woff") format("woff"),
+    url("https://file.myfontastic.com/9fPVzMyv63xGRm4pu633cE/fonts/1447143576.ttf") format("truetype"),
+    url("https://file.myfontastic.com/9fPVzMyv63xGRm4pu633cE/fonts/1447143576.svg#1447143576") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "standard-code" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "standard-code" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+  content: "b";
+}
+.icon-twitter:before {
+  content: "c";
+}
+.icon-instagram:before {
+  content: "a";
+}
+.icon-up-1:before {
+  content: "d";
+}
+.icon-up:before {
+  content: "e";
+}
+.icon-down:before {
+  content: "f";
+}
+.icon-heart-filled:before {
+  content: "g";
+}
+.icon-star:before {
+  content: "i";
+}
+.icon-mail:before {
+  content: "h";
+}
+.icon-list:before {
+  content: "j";
+}
+.icon-x:before {
+  content: "k";
+}
+.icon-left-1:before {
+  content: "l";
+}
+.icon-right-1:before {
+  content: "m";
+}
+.icon-mobile:before {
+  content: "n";
+}
+.icon-computer:before {
+  content: "o";
+}
+.icon-laptop:before {
+  content: "p";
+}
+.icon-right:before {
+  content: "q";
+}
+.icon-heart:before {
+  content: "t";
+}
+.icon-left-arrow:before {
+  content: "r";
+}
+.icon-right-arrow:before {
+  content: "s";
+}
+.icon-check:before {
+  content: "u";
+}
+.icon-left:before {
+  content: "v";
+}
+.icon-phone:before {
+  content: "w";
+}
+.icon-phone-1:before {
+  content: "x";
+}
+.icon-user:before {
+  content: "y";
+}
+.icon-doc:before {
+  content: "z";
+}
+.icon-dislike:before {
+  content: "A";
+}
+.icon-like:before {
+  content: "B";
+}
+.icon-align-center:before {
+  content: "C";
+}
+.icon-edit:before {
+  content: "D";
+}
+.icon-bottle:before {
+  content: "E";
+}
+.icon-standardlogo:before {
+  content: "F";
+}
+.icon-box:before {
+  content: "G";
+}
+.icon-smile:before {
+  content: "H";
+}
+.icon-facebook:before {
+  content: "I";
+}
+.icon-linkedin:before {
+  content: "J";
+}
+.icon-vcard:before {
+  content: "K";
+}
+.icon-popup:before {
+  content: "L";
+}
+.icon-folder-open:before {
+  content: "M";
+}
+.icon-folder:before {
+  content: "N";
+}
+.icon-user-line:before {
+  content: "O";
+}
+.icon-link:before {
+  content: "P";
+}
+.icon-power:before {
+  content: "Q";
+}
+.icon-thumb-up:before {
+  content: "R";
+}
+.icon-search:before {
+  content: "S";
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: inherit !important;
+
+}
+@media (min-width: 768px){
+.navbar-right {
+    float: right !important;
+    margin-right: 15px!important;
+}}
+
+.log-in-form{
+	width: 100%;
+}
+.log-in{
+	text-align: center;;
+}
