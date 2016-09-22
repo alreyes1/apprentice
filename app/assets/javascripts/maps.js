@@ -5,8 +5,6 @@ $(document).ready(function() {
 function loadScript() {
 	console.log("map loading ...");
   var script = document.createElement('script');
-  script.type = 'text/javascript';
-  'https://maps.googleapis.com/maps/api/js?key=AIzaSyDdYO6Xqe-ws4mL7dP-ggO4MfquwWf3JG4&sensor=false&libraries=drawing'
   script.src = 'https://maps.googleapis.com/maps/api/js?'+
     '&key=AIzaSyDdYO6Xqe-ws4mL7dP-ggO4MfquwWf3JG4'+
     '&libraries=drawing'+
