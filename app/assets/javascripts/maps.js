@@ -1,17 +1,5 @@
 $(document).ready(function() {
-   loadScript();
 });
-
-function loadScript() {
-	console.log("map loading ...");
-  var script = document.createElement('script');
-  script.src = 'https://maps.googleapis.com/maps/api/js?'+
-    '&key=AIzaSyDdYO6Xqe-ws4mL7dP-ggO4MfquwWf3JG4'+
-    '&libraries=drawing'+
-    '&callback=initialize';
-  document.body.appendChild(script);
-}
-
 //Function to Drop Multiple Markers on the map ;
 function initialize() {
   // Map Center
